@@ -1,0 +1,84 @@
+======================================================
+Project: Retail Sales Performance & Profitability Analysis
+File: DAX_Measures.txt
+Purpose: DAX Measures used in Power BI Dashboard
+======================================================
+
+
+------------------------------------------------------
+1) KPI Measures
+------------------------------------------------------
+
+Total Sales =
+SUM(retail_sales[Sales])
+
+Total Profit =
+SUM(retail_sales[Profit])
+
+Total Orders =
+DISTINCTCOUNT(retail_sales[OrderID])
+
+Profit Margin % =
+DIVIDE([Total Profit], [Total Sales])
+
+
+------------------------------------------------------
+2) Time Intelligence Measures
+------------------------------------------------------
+
+Sales LY =
+CALCULATE(
+    [Total Sales],
+    SAMEPERIODLASTYEAR(retail_sales[Order_Date])
+)
+
+YOY Growth % =
+DIVIDE(
+    [Total Sales] - [Sales LY],
+    [Sales LY]
+)
+
+
+------------------------------------------------------
+3) Category Performance
+------------------------------------------------------
+
+Top Category Sales =
+CALCULATE(
+    [Total Sales],
+    TOPN(1, VALUES(retail_sales[Category]), [Total Sales], DESC)
+)
+
+Top Profit Category =
+CALCULATE(
+    [Total Profit],
+    TOPN(1, VALUES(retail_sales[Category]), [Total Profit], DESC)
+)
+
+
+------------------------------------------------------
+4) Discount & Profitability Insight
+------------------------------------------------------
+
+Profit by Discount Level =
+SUM(retail_sales[Profit])
+
+Discount Level =
+SWITCH(
+    TRUE(),
+    retail_sales[Discount] < 0.10, "Low Discount",
+    retail_sales[Discount] >= 0.10 && retail_sales[Discount] <= 0.25, "Medium Discount",
+    "High Discount"
+)
+
+
+------------------------------------------------------
+5)  Advanced Analysis
+------------------------------------------------------
+
+Avg Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+High Profit Flag =
+IF([Profit Margin %] > 0.25, "High Profit", "Low/Medium Profit")
+
