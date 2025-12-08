@@ -48,7 +48,8 @@ The project delivers actionable insights to improve operational efficiency and m
 
 ## 📈 Dashboard Preview
 
-![Retail Sales Analysis](Dashboard_Screenshots.png)
+<img width="1380" height="781" alt="image" src="https://github.com/user-attachments/assets/b941862b-6b8b-4b17-8be4-78d416325571" />
+
 
 📌 *Executive Summary View*  
 📌 *Profit Trends & YoY Analysis*  
