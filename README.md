@@ -5,6 +5,10 @@ Developed using **Excel for data cleaning**, **MySQL for analytical modeling**, 
 
 ---
 
+## 📈 Dashboard Preview
+
+<img width="1380" height="781" alt="image" src="https://github.com/user-attachments/assets/b941862b-6b8b-4b17-8be4-78d416325571" />
+
 ## 📌 Project Overview
 
 Retail business data was analyzed to measure revenue performance, profitability trends, and discount strategy effectiveness across multiple states, regions, and product categories in India.
@@ -45,11 +49,6 @@ The project delivers actionable insights to improve operational efficiency and m
 - Best & Worst Performing Cities
 
 ---
-
-## 📈 Dashboard Preview
-
-<img width="1380" height="781" alt="image" src="https://github.com/user-attachments/assets/b941862b-6b8b-4b17-8be4-78d416325571" />
-
 
 📌 *Executive Summary View*  
 📌 *Profit Trends & YoY Analysis*  
