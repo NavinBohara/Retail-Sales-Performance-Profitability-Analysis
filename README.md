@@ -106,3 +106,19 @@ A[Raw Data] --> B[Excel Data Cleaning]
 B --> C[MySQL Data Modeling]
 C --> D[Power BI Dashboard]
 D --> E[Business Insights and Reporting]
+
+
+
+
+
+
+
+
+
+
+
+Copyright
+
+© 2025 Navin Bohara. All rights reserved.
+
+This project and its contents are my original work. The code, analysis, and visualizations in this repository may not be copied, modified, or redistributed without permission.
